@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "warmups",
+  "info": {
+    "name": "Warmup",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "time": {
+      "type": "decimal"
+    },
+    "sets": {
+      "type": "integer"
+    },
+    "reps": {
+      "type": "integer"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "maxWeight": {
+      "type": "decimal"
+    },
+    "images": {
+      "type": "json"
+    }
+  }
+}

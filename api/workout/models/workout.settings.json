@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "weeks",
+  "collectionName": "workouts",
   "info": {
-    "name": "week",
+    "name": "Workout",
     "description": ""
   },
   "options": {
@@ -15,8 +15,11 @@
       "type": "string",
       "required": true
     },
-    "workouts": {
-      "collection": "workout"
+    "exercises": {
+      "collection": "exercise"
+    },
+    "warmups": {
+      "collection": "warmup"
     }
   }
 }

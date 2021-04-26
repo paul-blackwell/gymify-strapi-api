@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/workouts",
+      "handler": "workout.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workouts/count",
+      "handler": "workout.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workouts/:id",
+      "handler": "workout.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/workouts",
+      "handler": "workout.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/workouts/:id",
+      "handler": "workout.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/workouts/:id",
+      "handler": "workout.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

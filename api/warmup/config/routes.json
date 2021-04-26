@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/warmups",
+      "handler": "warmup.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/warmups/count",
+      "handler": "warmup.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/warmups/:id",
+      "handler": "warmup.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/warmups",
+      "handler": "warmup.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/warmups/:id",
+      "handler": "warmup.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/warmups/:id",
+      "handler": "warmup.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

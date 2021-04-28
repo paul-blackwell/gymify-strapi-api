@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "exercises",
   "info": {
-    "name": "exercise"
+    "name": "exercise",
+    "description": ""
   },
   "options": {
     "increments": true,

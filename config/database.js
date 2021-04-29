@@ -4,12 +4,10 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST', 'gymifydb.gymqn.mongodb.net'),
+        uri: env('DATABASE_URI'),
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME', 'gymify-strapi-api'),
-        username: env('DATABASE_USERNAME'),
-        password: env('DATABASE_PASSWORD'),
+        database: env('DATABASE_NAME'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
@@ -17,4 +15,5 @@ module.exports = ({ env }) => ({
       },
     },
   },
-});
+})
+

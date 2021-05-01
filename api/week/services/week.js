@@ -5,18 +5,11 @@
  * to customize this service
  */
 
- module.exports = {
+module.exports = {
     find: ctx => {
-    return strapi.query('week').find(ctx.query, [
-        {
-          path: 'workouts',
-          populate: {
-            path: 'warmups',
-          },
-          populate: {
-            path: 'exercises',
-          },
-        },
-      ]);
+        return strapi.query('week').find(ctx.query, [
+            { path: 'workouts', populate: { path: 'warmups',}},
+            { path: 'workouts', populate: { path: 'exercises' }},
+        ]);
     },
-  };
+};

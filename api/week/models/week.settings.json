@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "weeks",
   "info": {
-    "name": "week"
+    "name": "week",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,9 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "order": {
+      "type": "integer"
     },
     "workouts": {
       "type": "json"
